@@ -1,0 +1,12 @@
+<p>
+  <b>Name:</b>
+  <%=h @LoyaltyCard.name %>
+</p>
+
+
+<p>
+<%= barcode '123234' %>
+</p>
+
+<%= link_to 'Edit', edit_loyalty_card_path(@loyalty_card) %> |
+<%= link_to 'Back', loyalty_cards_path %>

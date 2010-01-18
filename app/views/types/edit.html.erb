@@ -1,0 +1,25 @@
+<h1>Editing type</h1>
+
+<% form_for(@type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :format%><br />
+    <%= f.text_field :format%>
+  </p>
+
+<p>
+    <%= f.label :desc %><br />
+    <%= f.text_field :desc %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @type %> |
+<%= link_to 'Back', types_path %>
